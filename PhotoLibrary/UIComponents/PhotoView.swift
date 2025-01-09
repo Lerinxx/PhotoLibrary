@@ -10,6 +10,7 @@ final class PhotoView: UIView {
         view.alpha = 0
         view.contentMode = .scaleAspectFill
         view.clipsToBounds = true
+        view.layer.cornerRadius = 13
         return view
     }()
     
@@ -40,6 +41,8 @@ final class PhotoView: UIView {
     
     private func configUI() {
         self.backgroundColor = Constants.pinkColor
+        self.layer.cornerRadius = 13
+        
         addSubview(plusImage)
         addSubview(loadPhotoLabel)
         addSubview(imageView)

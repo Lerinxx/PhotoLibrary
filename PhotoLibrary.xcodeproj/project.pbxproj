@@ -23,6 +23,9 @@
 		794855642D2FC11B005C23F7 /* ArrowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855632D2FC11B005C23F7 /* ArrowBtn.swift */; };
 		794855672D2FCA6D005C23F7 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 794855662D2FCA6D005C23F7 /* Montserrat-VariableFont_wght.ttf */; };
 		794855692D2FD884005C23F7 /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855682D2FD884005C23F7 /* DateLabel.swift */; };
+		7948556B2D2FF207005C23F7 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948556A2D2FF207005C23F7 /* LibraryViewController.swift */; };
+		7948556D2D2FF67A005C23F7 /* AddPhotoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948556C2D2FF67A005C23F7 /* AddPhotoBtn.swift */; };
+		7948556F2D2FFEED005C23F7 /* DescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948556E2D2FFEED005C23F7 /* DescriptionTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		794855632D2FC11B005C23F7 /* ArrowBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowBtn.swift; sourceTree = "<group>"; };
 		794855662D2FCA6D005C23F7 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		794855682D2FD884005C23F7 /* DateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
+		7948556A2D2FF207005C23F7 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		7948556C2D2FF67A005C23F7 /* AddPhotoBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoBtn.swift; sourceTree = "<group>"; };
+		7948556E2D2FFEED005C23F7 /* DescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				794855652D2FCA62005C23F7 /* Fonts */,
-				794855592D2E828C005C23F7 /* PhotoViewUIComponents */,
+				794855592D2E828C005C23F7 /* UIComponents */,
 				7948553F2D2BC945005C23F7 /* AppDelegate.swift */,
 				794855412D2BC945005C23F7 /* SceneDelegate.swift */,
+				7948556A2D2FF207005C23F7 /* LibraryViewController.swift */,
 				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
 				794855552D2E80F7005C23F7 /* LaunchViewController.swift */,
 				794855572D2E8144005C23F7 /* Constants.swift */,
@@ -97,7 +104,7 @@
 			path = PhotoLibrary;
 			sourceTree = "<group>";
 		};
-		794855592D2E828C005C23F7 /* PhotoViewUIComponents */ = {
+		794855592D2E828C005C23F7 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
 				7948555D2D2EAD17005C23F7 /* BackBtn.swift */,
@@ -105,8 +112,10 @@
 				794855612D2EB0FB005C23F7 /* PhotoView.swift */,
 				794855632D2FC11B005C23F7 /* ArrowBtn.swift */,
 				794855682D2FD884005C23F7 /* DateLabel.swift */,
+				7948556C2D2FF67A005C23F7 /* AddPhotoBtn.swift */,
+				7948556E2D2FFEED005C23F7 /* DescriptionTextField.swift */,
 			);
-			path = PhotoViewUIComponents;
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		794855652D2FCA62005C23F7 /* Fonts */ = {
@@ -257,9 +266,12 @@
 				794855562D2E80F8005C23F7 /* LaunchViewController.swift in Sources */,
 				794855622D2EB0FB005C23F7 /* PhotoView.swift in Sources */,
 				794855542D2E7EFD005C23F7 /* AddPhotoViewController.swift in Sources */,
+				7948556D2D2FF67A005C23F7 /* AddPhotoBtn.swift in Sources */,
 				794855402D2BC945005C23F7 /* AppDelegate.swift in Sources */,
 				794855422D2BC945005C23F7 /* SceneDelegate.swift in Sources */,
+				7948556F2D2FFEED005C23F7 /* DescriptionTextField.swift in Sources */,
 				7948555E2D2EAD17005C23F7 /* BackBtn.swift in Sources */,
+				7948556B2D2FF207005C23F7 /* LibraryViewController.swift in Sources */,
 				794855582D2E8144005C23F7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

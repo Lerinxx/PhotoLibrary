@@ -1,7 +1,6 @@
 import UIKit
-import SnapKit
 
-final class LikeBtn: UIButton {
+final class DescriptionTextField: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -13,10 +12,10 @@ final class LikeBtn: UIButton {
     }
     
     private func configUI() {
-        setImage(Constants.likeBtn, for: .normal)
-        snp.makeConstraints { make in
-            make.width.equalTo(50)
-            make.height.equalTo(50)
-        }
+        self.placeholder = Constants.placeholderText
+        self.font = Constants.textFieldFont
+        self.textColor = .black
+        self.borderStyle = .line
+        self.textAlignment = .center
     }
 }

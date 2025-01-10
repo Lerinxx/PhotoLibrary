@@ -14,6 +14,10 @@ final class PhotoView: UIView {
         return view
     }()
     
+    var image: UIImage? {
+        return imageView.image
+    }
+    
     private let plusImage: UIImageView = {
         let view = UIImageView()
         view.image = Constants.plusImage

@@ -151,7 +151,16 @@ class AddPhotoViewController: UIViewController {
     }
     
     private func backBtnPressed() {
-        navigationController?.popToRootViewController(animated: true)
+        if let image = photoView.image {
+            guard let imageName = StorageManager.shared.saveImage(image) else { return }
+            let imageObject = UserImage(imageName: imageName)
+            StorageManager.shared.saveImage(imageObject)
+            
+            let controller = PhotoViewController()
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     private func likeBtnPressed() {

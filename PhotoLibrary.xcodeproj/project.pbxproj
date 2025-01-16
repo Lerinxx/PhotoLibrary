@@ -29,6 +29,8 @@
 		794855932D3152AE005C23F7 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855922D3152AE005C23F7 /* UserImage.swift */; };
 		794855952D315466005C23F7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855942D315465005C23F7 /* StorageManager.swift */; };
 		794855972D315ED3005C23F7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855962D315ED3005C23F7 /* PhotoViewController.swift */; };
+		79A856562D3938940003552B /* FlipBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A856552D3938940003552B /* FlipBtn.swift */; };
+		79A856592D393A320003552B /* PhotoFlipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A856582D393A320003552B /* PhotoFlipper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		794855922D3152AE005C23F7 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		794855942D315465005C23F7 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		794855962D315ED3005C23F7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		79A856552D3938940003552B /* FlipBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBtn.swift; sourceTree = "<group>"; };
+		79A856582D393A320003552B /* PhotoFlipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFlipper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		7948553E2D2BC945005C23F7 /* PhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				79A856572D3939F70003552B /* StorageManager */,
 				794855652D2FCA62005C23F7 /* Fonts */,
 				794855592D2E828C005C23F7 /* UIComponents */,
 				7948553F2D2BC945005C23F7 /* AppDelegate.swift */,
@@ -100,6 +105,7 @@
 				7948556A2D2FF207005C23F7 /* LibraryViewController.swift */,
 				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
 				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
+				79A856582D393A320003552B /* PhotoFlipper.swift */,
 				794855552D2E80F7005C23F7 /* LaunchViewController.swift */,
 				794855572D2E8144005C23F7 /* Constants.swift */,
 				794855452D2BC945005C23F7 /* Main.storyboard */,
@@ -107,8 +113,6 @@
 				7948554A2D2BC947005C23F7 /* LaunchScreen.storyboard */,
 				794855432D2BC945005C23F7 /* ViewController.swift */,
 				7948554D2D2BC947005C23F7 /* Info.plist */,
-				794855922D3152AE005C23F7 /* UserImage.swift */,
-				794855942D315465005C23F7 /* StorageManager.swift */,
 			);
 			path = PhotoLibrary;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 				794855682D2FD884005C23F7 /* DateLabel.swift */,
 				7948556C2D2FF67A005C23F7 /* AddPhotoBtn.swift */,
 				7948556E2D2FFEED005C23F7 /* DescriptionTextField.swift */,
+				79A856552D3938940003552B /* FlipBtn.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -133,6 +138,15 @@
 				794855662D2FCA6D005C23F7 /* Montserrat-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		79A856572D3939F70003552B /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				794855922D3152AE005C23F7 /* UserImage.swift */,
+				794855942D315465005C23F7 /* StorageManager.swift */,
+			);
+			path = StorageManager;
 			sourceTree = "<group>";
 		};
 		A0970960F747C10F9F4B777E /* Pods */ = {
@@ -277,9 +291,11 @@
 				794855622D2EB0FB005C23F7 /* PhotoView.swift in Sources */,
 				794855542D2E7EFD005C23F7 /* AddPhotoViewController.swift in Sources */,
 				7948556D2D2FF67A005C23F7 /* AddPhotoBtn.swift in Sources */,
+				79A856562D3938940003552B /* FlipBtn.swift in Sources */,
 				794855402D2BC945005C23F7 /* AppDelegate.swift in Sources */,
 				794855972D315ED3005C23F7 /* PhotoViewController.swift in Sources */,
 				794855422D2BC945005C23F7 /* SceneDelegate.swift in Sources */,
+				79A856592D393A320003552B /* PhotoFlipper.swift in Sources */,
 				7948556F2D2FFEED005C23F7 /* DescriptionTextField.swift in Sources */,
 				7948555E2D2EAD17005C23F7 /* BackBtn.swift in Sources */,
 				7948556B2D2FF207005C23F7 /* LibraryViewController.swift in Sources */,

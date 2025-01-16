@@ -10,7 +10,11 @@ final class StorageManager {
     
     func saveImage(_ image: UserImage) {
         var images = loadImages()
-        images.append(image)
+        if let index = images.firstIndex(where: { $0.imageName == image.imageName }) {
+            images[index] = image
+        } else {
+            images.append(image)
+        }
         
         UserDefaults.standard.set(encodable: images, for: Key.userImage.rawValue)
     }

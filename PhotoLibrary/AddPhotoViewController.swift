@@ -58,8 +58,8 @@ class AddPhotoViewController: UIViewController {
         
         topView.snp.makeConstraints { make in
             make.width.equalToSuperview()
-            make.top.equalTo(additionalSafeAreaInsets.top).offset(35)
-            make.height.equalTo(140)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.height.equalTo(100)
         }
         backBtn.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(25)
@@ -78,7 +78,7 @@ class AddPhotoViewController: UIViewController {
             make.width.equalToSuperview().multipliedBy(0.9)
             make.height.equalTo(photoView.snp.width)
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(50)
+            make.top.equalToSuperview().offset(40)
         }
         dateLabel.snp.makeConstraints { make in
             make.width.equalTo(photoView.snp.width)

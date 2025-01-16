@@ -99,6 +99,7 @@
 				794855412D2BC945005C23F7 /* SceneDelegate.swift */,
 				7948556A2D2FF207005C23F7 /* LibraryViewController.swift */,
 				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
+				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
 				794855552D2E80F7005C23F7 /* LaunchViewController.swift */,
 				794855572D2E8144005C23F7 /* Constants.swift */,
 				794855452D2BC945005C23F7 /* Main.storyboard */,
@@ -108,7 +109,6 @@
 				7948554D2D2BC947005C23F7 /* Info.plist */,
 				794855922D3152AE005C23F7 /* UserImage.swift */,
 				794855942D315465005C23F7 /* StorageManager.swift */,
-				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
 			);
 			path = PhotoLibrary;
 			sourceTree = "<group>";

@@ -19,10 +19,11 @@ final class DateLabel: UILabel {
         self.isHidden = true
     }
     
-    func updateDate() {
+    func updateDate(with date: Date) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
-        self.text = dateFormatter.string(from: Date())
+        self.text = dateFormatter.string(from: date)
+        self.isHidden = false
     }
 }

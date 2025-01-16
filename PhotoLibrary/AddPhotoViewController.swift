@@ -2,6 +2,7 @@ import UIKit
 import SnapKit
 
 class AddPhotoViewController: UIViewController {
+    private var savedDate: Date?
     
     private let backBtn: BackBtn = {
         let btn = BackBtn()
@@ -91,8 +92,11 @@ class AddPhotoViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
         photoView.imageChangedCallback = { [weak self] in
-            self?.dateLabel.updateDate()
-            self?.dateLabel.isHidden = false
+            guard let self = self else { return }
+            self.savedDate = Date()
+            if let date = self.savedDate {
+                self.dateLabel.updateDate(with: date)
+            }
         }
         
         let backAction = UIAction { _ in
@@ -151,9 +155,10 @@ class AddPhotoViewController: UIViewController {
     }
     
     private func backBtnPressed() {
-        if let image = photoView.image {
+        if let image = photoView.image, let date = savedDate {
             guard let imageName = StorageManager.shared.saveImage(image) else { return }
-            let imageObject = UserImage(imageName: imageName)
+            let text = textField.text ?? ""
+            let imageObject = UserImage(imageName: imageName, text: text, date: date)
             StorageManager.shared.saveImage(imageObject)
             
             let controller = PhotoViewController()

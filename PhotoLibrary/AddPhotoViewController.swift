@@ -158,7 +158,7 @@ class AddPhotoViewController: UIViewController {
         if let image = photoView.image, let date = savedDate {
             guard let imageName = StorageManager.shared.saveImage(image) else { return }
             let text = textField.text ?? ""
-            let imageObject = UserImage(imageName: imageName, text: text, date: date)
+            let imageObject = UserImage(imageName: imageName, text: text, date: date, isLiked: likeBtn.isSelected)
             StorageManager.shared.saveImage(imageObject)
             
             let controller = PhotoViewController()

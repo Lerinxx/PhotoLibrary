@@ -125,9 +125,14 @@ class PhotoViewController: UIViewController {
         let backAction = UIAction { _ in
             self.backBtnPressed()
         }
+        let likeAction = UIAction { _ in
+            self.likeBtnPressed()
+        }
+        
         rightBtn.addAction(nextAction, for: .touchUpInside)
         leftBtn.addAction(previousAction, for: .touchUpInside)
         backBtn.addAction(backAction, for: .touchUpInside)
+        likeBtn.addAction(likeAction, for: .touchUpInside)
     }
     
     private func setDefaultImage() {
@@ -137,6 +142,7 @@ class PhotoViewController: UIViewController {
             photoView.image = image
             textField.text = lastImage.text
             dateLabel.updateDate(with: lastImage.date)
+            likeBtn.setLikeState(lastImage.isLiked)
         }
     }
     
@@ -147,6 +153,7 @@ class PhotoViewController: UIViewController {
         }
         dateLabel.updateDate(with: currentImage.date)
         textField.text = currentImage.text
+        likeBtn.setLikeState(currentImage.isLiked)
     }
     
     private func rightBtnPressed() {
@@ -163,6 +170,14 @@ class PhotoViewController: UIViewController {
     
     private func backBtnPressed() {
         navigationController?.popToRootViewController(animated: true)
+    }
+    
+    private func likeBtnPressed() {
+        likeBtn.toggleLike()
+        if let currentImage = photoFlipper.getCurrentImage() {
+            currentImage.isLiked = likeBtn.isSelected
+            StorageManager.shared.saveImage(currentImage)
+        }
     }
     
     private func configKeyboardChanges() {

@@ -24,16 +24,20 @@ final class LikeBtn: UIButton {
         }
     }
     
+    private func toggleLikeUI() {
+        var config = UIButton.Configuration.plain()
+        config.image = self.isSelected ? Constants.likeBtnFilled : Constants.likeBtn
+        config.baseBackgroundColor = .clear
+        self.configuration = config
+    }
+    
+    func setLikeState(_ liked: Bool) {
+        self.isSelected = liked
+        toggleLikeUI()
+    }
+    
     func toggleLike() {
         self.isSelected.toggle()
-        
-        var config = UIButton.Configuration.plain()
-        if self.isSelected {
-            config.image = Constants.likeBtnFilled
-            config.baseBackgroundColor = .clear
-        } else {
-            config.image = Constants.likeBtn
-        }
-        self.configuration = config
+        toggleLikeUI()
     }
 }

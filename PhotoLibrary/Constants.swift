@@ -9,6 +9,10 @@ final class Constants {
     static let arrowBtn = UIImage(named: "flip_arrow")
     static let plusImage = UIImage(named: "plus_icon")
     static let photoImage = UIImage(named: "image_icon")
+    static let lockImage = UIImage(named: "lock_icon")
+    static let roundBtnImage = UIImage(named: "round_btn")
+    static let roundBtnFillImage = UIImage(named: "round_btn_fill")
+
 
     // colors
     static let pinkColor = UIColor(red: 0.9450980392156862, green: 0.8549019607843137, blue: 0.9333333333333333, alpha: 1)
@@ -17,6 +21,7 @@ final class Constants {
     // labels texts
     static let loadPhotoLabel = "Tap to add new photo"
     static let placeholderText = "Write something..."
+    static let createPasscodeText = "Create your passcode"
     
     // main font
     static let bodyFont = UIFont(name: "Montserrat-Medium", size: 24)

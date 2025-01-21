@@ -15,7 +15,7 @@
 		794855492D2BC947005C23F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794855482D2BC947005C23F7 /* Assets.xcassets */; };
 		7948554C2D2BC947005C23F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7948554A2D2BC947005C23F7 /* LaunchScreen.storyboard */; };
 		794855542D2E7EFD005C23F7 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */; };
-		794855562D2E80F8005C23F7 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855552D2E80F7005C23F7 /* LaunchViewController.swift */; };
+		794855562D2E80F8005C23F7 /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855552D2E80F7005C23F7 /* PasscodeViewController.swift */; };
 		794855582D2E8144005C23F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855572D2E8144005C23F7 /* Constants.swift */; };
 		7948555E2D2EAD17005C23F7 /* BackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948555D2D2EAD17005C23F7 /* BackBtn.swift */; };
 		794855602D2EAF6A005C23F7 /* LikeBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948555F2D2EAF6A005C23F7 /* LikeBtn.swift */; };
@@ -46,7 +46,7 @@
 		7948554B2D2BC947005C23F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7948554D2D2BC947005C23F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
-		794855552D2E80F7005C23F7 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		794855552D2E80F7005C23F7 /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
 		794855572D2E8144005C23F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7948555D2D2EAD17005C23F7 /* BackBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBtn.swift; sourceTree = "<group>"; };
 		7948555F2D2EAF6A005C23F7 /* LikeBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeBtn.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
 				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
 				79A856582D393A320003552B /* PhotoFlipper.swift */,
-				794855552D2E80F7005C23F7 /* LaunchViewController.swift */,
+				794855552D2E80F7005C23F7 /* PasscodeViewController.swift */,
 				794855572D2E8144005C23F7 /* Constants.swift */,
 				794855452D2BC945005C23F7 /* Main.storyboard */,
 				794855482D2BC947005C23F7 /* Assets.xcassets */,
@@ -286,7 +286,7 @@
 				794855602D2EAF6A005C23F7 /* LikeBtn.swift in Sources */,
 				794855692D2FD884005C23F7 /* DateLabel.swift in Sources */,
 				794855642D2FC11B005C23F7 /* ArrowBtn.swift in Sources */,
-				794855562D2E80F8005C23F7 /* LaunchViewController.swift in Sources */,
+				794855562D2E80F8005C23F7 /* PasscodeViewController.swift in Sources */,
 				794855932D3152AE005C23F7 /* UserImage.swift in Sources */,
 				794855622D2EB0FB005C23F7 /* PhotoView.swift in Sources */,
 				794855542D2E7EFD005C23F7 /* AddPhotoViewController.swift in Sources */,

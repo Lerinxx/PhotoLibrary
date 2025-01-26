@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7683DA84D97B5222BD78D0DE /* Pods_PhotoLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A07776ADE957091DC5C2FA0 /* Pods_PhotoLibrary.framework */; };
+		7946936E2D467A6F00D5E0F3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946936D2D467A6F00D5E0F3 /* UIViewController+Extensions.swift */; };
 		794855402D2BC945005C23F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948553F2D2BC945005C23F7 /* AppDelegate.swift */; };
 		794855422D2BC945005C23F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855412D2BC945005C23F7 /* SceneDelegate.swift */; };
 		794855442D2BC945005C23F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855432D2BC945005C23F7 /* ViewController.swift */; };
@@ -31,12 +32,14 @@
 		794855972D315ED3005C23F7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855962D315ED3005C23F7 /* PhotoViewController.swift */; };
 		79A856562D3938940003552B /* FlipBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A856552D3938940003552B /* FlipBtn.swift */; };
 		79A856592D393A320003552B /* PhotoFlipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A856582D393A320003552B /* PhotoFlipper.swift */; };
+		79A8565F2D3E79B40003552B /* PasscodeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8565E2D3E79B40003552B /* PasscodeStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DB1CB8F2E19F3B6E3861819 /* Pods-PhotoLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLibrary.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLibrary/Pods-PhotoLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		39541820B91086FD51AB166C /* Pods-PhotoLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLibrary.release.xcconfig"; path = "Target Support Files/Pods-PhotoLibrary/Pods-PhotoLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		5A07776ADE957091DC5C2FA0 /* Pods_PhotoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7946936D2D467A6F00D5E0F3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		7948553C2D2BC945005C23F7 /* PhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7948553F2D2BC945005C23F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794855412D2BC945005C23F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		794855962D315ED3005C23F7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		79A856552D3938940003552B /* FlipBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBtn.swift; sourceTree = "<group>"; };
 		79A856582D393A320003552B /* PhotoFlipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFlipper.swift; sourceTree = "<group>"; };
+		79A8565E2D3E79B40003552B /* PasscodeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7946936C2D467A5600D5E0F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7946936D2D467A6F00D5E0F3 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		794855332D2BC945005C23F7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				79A856572D3939F70003552B /* StorageManager */,
+				7946936C2D467A5600D5E0F3 /* Extensions */,
 				794855652D2FCA62005C23F7 /* Fonts */,
 				794855592D2E828C005C23F7 /* UIComponents */,
 				7948553F2D2BC945005C23F7 /* AppDelegate.swift */,
@@ -128,6 +141,7 @@
 				7948556C2D2FF67A005C23F7 /* AddPhotoBtn.swift */,
 				7948556E2D2FFEED005C23F7 /* DescriptionTextField.swift */,
 				79A856552D3938940003552B /* FlipBtn.swift */,
+				79A8565E2D3E79B40003552B /* PasscodeStackView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -283,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				794855442D2BC945005C23F7 /* ViewController.swift in Sources */,
+				79A8565F2D3E79B40003552B /* PasscodeStackView.swift in Sources */,
 				794855602D2EAF6A005C23F7 /* LikeBtn.swift in Sources */,
 				794855692D2FD884005C23F7 /* DateLabel.swift in Sources */,
 				794855642D2FC11B005C23F7 /* ArrowBtn.swift in Sources */,
@@ -291,6 +306,7 @@
 				794855622D2EB0FB005C23F7 /* PhotoView.swift in Sources */,
 				794855542D2E7EFD005C23F7 /* AddPhotoViewController.swift in Sources */,
 				7948556D2D2FF67A005C23F7 /* AddPhotoBtn.swift in Sources */,
+				7946936E2D467A6F00D5E0F3 /* UIViewController+Extensions.swift in Sources */,
 				79A856562D3938940003552B /* FlipBtn.swift in Sources */,
 				794855402D2BC945005C23F7 /* AppDelegate.swift in Sources */,
 				794855972D315ED3005C23F7 /* PhotoViewController.swift in Sources */,

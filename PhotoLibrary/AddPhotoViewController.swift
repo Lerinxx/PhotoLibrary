@@ -164,7 +164,7 @@ class AddPhotoViewController: UIViewController {
             let controller = PhotoViewController()
             navigationController?.pushViewController(controller, animated: true)
         } else {
-            navigationController?.popToRootViewController(animated: true)
+            navigationController?.popViewController(animated: true)
         }
     }
     

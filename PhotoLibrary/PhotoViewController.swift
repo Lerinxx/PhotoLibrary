@@ -169,7 +169,7 @@ class PhotoViewController: UIViewController {
     }
     
     private func backBtnPressed() {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     private func likeBtnPressed() {

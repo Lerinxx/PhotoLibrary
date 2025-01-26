@@ -22,6 +22,8 @@ final class Constants {
     static let loadPhotoLabel = "Tap to add new photo"
     static let placeholderText = "Write something..."
     static let createPasscodeText = "Create your passcode"
+    static let confirmPasscodeText = "Confirm your passcode"
+    static let enterPasscodeText = "Enter your passcode"
     
     // main font
     static let bodyFont = UIFont(name: "Montserrat-Medium", size: 24)

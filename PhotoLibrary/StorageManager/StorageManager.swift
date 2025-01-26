@@ -2,6 +2,7 @@ import UIKit
 
 enum Key: String {
     case userImage = "userImage"
+    case password = "password"
 }
 
 final class StorageManager {
@@ -46,6 +47,14 @@ final class StorageManager {
         }
         let fileURL = documentDirectory.appendingPathComponent(fileName)
         return UIImage(contentsOfFile: fileURL.path)
+    }
+    
+    func savePassword(password: String) {
+        UserDefaults.standard.set(password, forKey: Key.password.rawValue)
+    }
+    
+    func loadPassword() -> String? {
+        return UserDefaults.standard.string(forKey: Key.password.rawValue)
     }
 }
 

@@ -1,7 +1,18 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
+    
+    private let passedImage: UserImage?
     private let photoFlipper = PhotoFlipper()
+    
+    init(passedImage: UserImage? = nil) {
+        self.passedImage = passedImage
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private let backBtn: BackBtn = {
         let btn = BackBtn()
@@ -55,7 +66,7 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        setDefaultImage()
+        setImage()
         configKeyboardChanges()
     }
     
@@ -135,14 +146,23 @@ class PhotoViewController: UIViewController {
         likeBtn.addAction(likeAction, for: .touchUpInside)
     }
     
-    private func setDefaultImage() {
-        let images = StorageManager.shared.loadImages()
-        if let lastImage = images.last,
-           let image = StorageManager.shared.loadImage(fileName: lastImage.imageName) {
-            photoView.image = image
-            textField.text = lastImage.text
-            dateLabel.updateDate(with: lastImage.date)
-            likeBtn.setLikeState(lastImage.isLiked)
+    private func setImage() {
+        if let image = passedImage {
+            if let loadedImage = StorageManager.shared.loadImage(fileName: image.imageName) {
+                photoView.image = loadedImage
+                textField.text = image.text
+                dateLabel.updateDate(with: image.date)
+                likeBtn.setLikeState(image.isLiked)
+            }
+        } else {
+            let images = StorageManager.shared.loadImages()
+            if let lastImage = images.last,
+               let loadedImage = StorageManager.shared.loadImage(fileName: lastImage.imageName) {
+                photoView.image = loadedImage
+                textField.text = lastImage.text
+                dateLabel.updateDate(with: lastImage.date)
+                likeBtn.setLikeState(lastImage.isLiked)
+            }
         }
     }
     
@@ -169,7 +189,11 @@ class PhotoViewController: UIViewController {
     }
     
     private func backBtnPressed() {
-        navigationController?.popViewController(animated: true)
+        if let libraryViewController = navigationController?.viewControllers.first(where: { $0 is LibraryViewController }) {
+            navigationController?.popToViewController(libraryViewController, animated: true)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     private func likeBtnPressed() {

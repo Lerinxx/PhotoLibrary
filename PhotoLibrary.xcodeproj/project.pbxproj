@@ -12,7 +12,6 @@
 		7946936E2D467A6F00D5E0F3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946936D2D467A6F00D5E0F3 /* UIViewController+Extensions.swift */; };
 		794855402D2BC945005C23F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948553F2D2BC945005C23F7 /* AppDelegate.swift */; };
 		794855422D2BC945005C23F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855412D2BC945005C23F7 /* SceneDelegate.swift */; };
-		794855442D2BC945005C23F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794855432D2BC945005C23F7 /* ViewController.swift */; };
 		794855472D2BC945005C23F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794855452D2BC945005C23F7 /* Main.storyboard */; };
 		794855492D2BC947005C23F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794855482D2BC947005C23F7 /* Assets.xcassets */; };
 		7948554C2D2BC947005C23F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7948554A2D2BC947005C23F7 /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		7948553C2D2BC945005C23F7 /* PhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7948553F2D2BC945005C23F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794855412D2BC945005C23F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		794855432D2BC945005C23F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		794855462D2BC945005C23F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		794855482D2BC947005C23F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7948554B2D2BC947005C23F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +89,24 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		7915C18B2D50F74B00324C23 /* AddViewPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				79A856582D393A320003552B /* PhotoFlipper.swift */,
+				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
+				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
+			);
+			path = AddViewPhoto;
+			sourceTree = "<group>";
+		};
+		7915C18C2D50F76C00324C23 /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				794855552D2E80F7005C23F7 /* PasscodeViewController.swift */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
 		7946936C2D467A5600D5E0F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +136,8 @@
 		7948553E2D2BC945005C23F7 /* PhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				7915C18C2D50F76C00324C23 /* Passcode */,
+				7915C18B2D50F74B00324C23 /* AddViewPhoto */,
 				7907566B2D50EB5400B0C2D5 /* Library */,
 				79A856572D3939F70003552B /* StorageManager */,
 				7946936C2D467A5600D5E0F3 /* Extensions */,
@@ -127,15 +145,10 @@
 				794855592D2E828C005C23F7 /* UIComponents */,
 				7948553F2D2BC945005C23F7 /* AppDelegate.swift */,
 				794855412D2BC945005C23F7 /* SceneDelegate.swift */,
-				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
-				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
-				79A856582D393A320003552B /* PhotoFlipper.swift */,
-				794855552D2E80F7005C23F7 /* PasscodeViewController.swift */,
 				794855572D2E8144005C23F7 /* Constants.swift */,
 				794855452D2BC945005C23F7 /* Main.storyboard */,
 				794855482D2BC947005C23F7 /* Assets.xcassets */,
 				7948554A2D2BC947005C23F7 /* LaunchScreen.storyboard */,
-				794855432D2BC945005C23F7 /* ViewController.swift */,
 				7948554D2D2BC947005C23F7 /* Info.plist */,
 			);
 			path = PhotoLibrary;
@@ -307,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794855442D2BC945005C23F7 /* ViewController.swift in Sources */,
 				7907566A2D50E64200B0C2D5 /* PhotoCell.swift in Sources */,
 				79A8565F2D3E79B40003552B /* PasscodeStackView.swift in Sources */,
 				794855602D2EAF6A005C23F7 /* LikeBtn.swift in Sources */,

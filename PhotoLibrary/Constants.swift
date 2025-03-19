@@ -24,6 +24,8 @@ final class Constants {
     static let createPasscodeText = "Create your passcode"
     static let confirmPasscodeText = "Confirm your passcode"
     static let enterPasscodeText = "Enter your passcode"
+    static let seeFavorText = "Show favourites"
+    static let showAllText = "Show all photos"
     
     // main font
     static let bodyFont = UIFont(name: "Montserrat-Medium", size: 24)

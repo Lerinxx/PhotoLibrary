@@ -1,16 +1,20 @@
 PODS:
+  - KeychainAccess (4.2.2)
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
+  - KeychainAccess
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - KeychainAccess
     - SnapKit
 
 SPEC CHECKSUMS:
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 7a0fab8f7632ec363457721c7c5234959227fc0c
+PODFILE CHECKSUM: fba6a29985172cabdb1544d5ab1147a9d82cdf52
 
 COCOAPODS: 1.16.2

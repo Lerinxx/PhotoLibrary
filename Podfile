@@ -7,4 +7,6 @@ target 'PhotoLibrary' do
 
   # Pods for PhotoLibrary
   pod 'SnapKit'
+  pod 'KeychainAccess'
+
 end

@@ -89,14 +89,14 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
-		7915C18B2D50F74B00324C23 /* AddViewPhoto */ = {
+		7915C18B2D50F74B00324C23 /* PhotoView */ = {
 			isa = PBXGroup;
 			children = (
 				79A856582D393A320003552B /* PhotoFlipper.swift */,
 				794855532D2E7EFD005C23F7 /* AddPhotoViewController.swift */,
 				794855962D315ED3005C23F7 /* PhotoViewController.swift */,
 			);
-			path = AddViewPhoto;
+			path = PhotoView;
 			sourceTree = "<group>";
 		};
 		7915C18C2D50F76C00324C23 /* Passcode */ = {
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7915C18C2D50F76C00324C23 /* Passcode */,
-				7915C18B2D50F74B00324C23 /* AddViewPhoto */,
+				7915C18B2D50F74B00324C23 /* PhotoView */,
 				7907566B2D50EB5400B0C2D5 /* Library */,
 				79A856572D3939F70003552B /* StorageManager */,
 				7946936C2D467A5600D5E0F3 /* Extensions */,
@@ -488,6 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF59355P8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,6 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF59355P8X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

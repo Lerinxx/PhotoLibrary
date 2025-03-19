@@ -1,4 +1,5 @@
 import UIKit
+import KeychainAccess
 
 enum Key: String {
     case userImage = "userImage"
@@ -6,7 +7,10 @@ enum Key: String {
 }
 
 final class StorageManager {
+    
     static let shared = StorageManager()
+    private let keychain = Keychain(service: "")
+    
     private init() { }
     
     func saveImage(_ image: UserImage) {
@@ -50,11 +54,19 @@ final class StorageManager {
     }
     
     func savePassword(password: String) {
-        UserDefaults.standard.set(password, forKey: Key.password.rawValue)
+        do {
+            try keychain.set(password, key: Key.password.rawValue)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func loadPassword() -> String? {
-        return UserDefaults.standard.string(forKey: Key.password.rawValue)
+        return try? keychain.get(Key.password.rawValue)
+    }
+    
+    func deletePassword() {
+        try? keychain.remove(Key.password.rawValue)
     }
 }
 
